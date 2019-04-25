@@ -37,11 +37,11 @@
         <div class="container">
             <div id="login-position-elements">
                 <div class="login-logo">
-                    {{ config('app.name', 'Pterodactyl') }}
+                <img src="pic_trulli.jpg" alt="Italian Trulli">
                 </div>
                 @yield('content')
                 <p class="small login-copyright text-center">
-                    Copyright &copy; 2015 - {{ date('Y') }} <a href="https://pterodactyl.io/">Pterodactyl Software</a>. Theme Creation: <a href="https://hardcastle.xyz/">Will Hardcastle</a><br />
+                    Copyright RELY Hosting LTD &copy 2019</a><br />
                 </p>
             </div>
         </div>

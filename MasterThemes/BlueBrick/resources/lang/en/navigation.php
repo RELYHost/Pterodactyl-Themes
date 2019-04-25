@@ -11,8 +11,8 @@ return [
     ],
     'server' => [
         'header' => 'SERVER MANAGEMENT',
-        'console' => 'Console',
-        'console-pop' => 'Fullscreen Console',
+        'console' => 'Super Hacker Console',
+        'console-pop' => 'Thicc Boi Console',
         'file_management' => 'File Management',
         'file_browser' => 'File Browser',
         'create_file' => 'Create File',

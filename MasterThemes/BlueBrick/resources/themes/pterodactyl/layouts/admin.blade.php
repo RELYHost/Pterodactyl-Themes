@@ -74,7 +74,7 @@
             <aside class="main-sidebar">
                 <section class="sidebar">
                     <ul class="sidebar-menu">
-                        <li class="header">BASIC ADMINISTRATION</li>
+                        <li class="header">1. BASIC ADMINISTRATION</li>
                         <li class="{{ Route::currentRouteName() !== 'admin.index' ?: 'active' }}">
                             <a href="{{ route('admin.index') }}">
                                 <i class="fa fa-home"></i> <span>Overview</span>
@@ -95,7 +95,7 @@
                                 <i class="fa fa-gamepad"></i> <span>Application API</span>
                             </a>
                         </li>
-                        <li class="header">MANAGEMENT</li>
+                        <li class="header">2. MANAGEMENT</li>
                         <li class="{{ ! starts_with(Route::currentRouteName(), 'admin.databases') ?: 'active' }}">
                             <a href="{{ route('admin.databases') }}">
                                 <i class="fa fa-database"></i> <span>Databases</span>
@@ -121,7 +121,7 @@
                                 <i class="fa fa-users"></i> <span>Users</span>
                             </a>
                         </li>
-                        <li class="header">SERVICE MANAGEMENT</li>
+                        <li class="header">HU ONLY | SERVICE MANAGEMENT</li>
                         <li class="{{ ! starts_with(Route::currentRouteName(), 'admin.nests') ?: 'active' }}">
                             <a href="{{ route('admin.nests') }}">
                                 <i class="fa fa-th-large"></i> <span>Nests</span>
@@ -171,7 +171,7 @@
                     @endif<br/>
                     <strong><i class="fa fa-fw fa-clock-o"></i></strong> {{ round(microtime(true) - LARAVEL_START, 3) }}s
                 </div>
-                Copyright &copy; 2015 - {{ date('Y') }} <a href="https://pterodactyl.io/">Pterodactyl Software</a>. Theme Creation: <a href="https://hardcastle.xyz/">Will Hardcastle</a>
+                Copyright RELY Hosting &copy 2019
             </footer>
         </div>
         @section('footer-scripts')
@@ -197,7 +197,7 @@
 
                         var that = this;
                         swal({
-                            title: 'Do you want to log out?',
+                            title: 'LOL are you sure you want to logout!',
                             type: 'warning',
                             showCancelButton: true,
                             confirmButtonColor: '#d9534f',

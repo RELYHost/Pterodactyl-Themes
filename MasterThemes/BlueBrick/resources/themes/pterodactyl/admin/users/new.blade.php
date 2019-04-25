@@ -28,7 +28,7 @@
                 </div>
                 <div class="box-body">
                     <div class="form-group">
-                        <label for="email" class="control-label">Email</label>
+                        <label for="email" class="control-label">Email Address</label>
                         <div>
                             <input type="text" autocomplete="off" name="email" value="{{ old('email') }}" class="form-control" />
                         </div>
@@ -40,13 +40,13 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="name_first" class="control-label">Client First Name</label>
+                        <label for="name_first" class="control-label">User's First Name</label>
                         <div>
                             <input type="text" autocomplete="off" name="name_first" value="{{ old('name_first') }}" class="form-control" />
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="name_last" class="control-label">Client Last Name</label>
+                        <label for="name_last" class="control-label">User's Last Name</label>
                         <div>
                             <input type="text" autocomplete="off" name="name_last" value="{{ old('name_last') }}" class="form-control" />
                         </div>
@@ -76,13 +76,13 @@
                 </div>
                 <div class="box-body">
                     <div class="form-group col-md-12">
-                        <label for="root_admin" class="control-label">Administrator</label>
+                        <label for="root_admin" class="control-label">Administrative Privledges</label>
                         <div>
                             <select name="root_admin" class="form-control">
                                 <option value="0">@lang('strings.no')</option>
                                 <option value="1">@lang('strings.yes')</option>
                             </select>
-                            <p class="text-muted"><small>Setting this to 'Yes' gives a user full administrative access.</small></p>
+                            <p class="text-muted"><small>This is only to be ticked to yes under special circumstances (Christian or Noah must give permission)</small></p>
                         </div>
                     </div>
                 </div>
@@ -95,7 +95,7 @@
                 </div>
                 <div class="box-body">
                     <div class="alert alert-info">
-                        <p>Providing a user password is optional. New user emails prompt users to create a password the first time they login. If a password is provided here you will need to find a different method of providing it to the user.</p>
+                        <p>Putting a password is semi optional, it's recommended but Pterodactyl will send an email to the client allowing them to pick a password if you choose not to put a password.</p>
                     </div>
                     <div id="gen_pass" class=" alert alert-success" style="display:none;margin-bottom: 10px;"></div>
                     <div class="form-group">
