@@ -41,10 +41,10 @@
 				</div>
 			</div>
 			<div class="box-footer text-center">
-				@can('power-start', $server)<button class="btn btn-success disabled" data-attr="power" data-action="start">Start</button>@endcan
+				@can('power-start', $server)<button class="btn btn-success disabled" data-attr="power" data-action="start">Jumpstart</button>@endcan
 				@can('power-restart', $server)<button class="btn btn-primary disabled" data-attr="power" data-action="restart">Restart</button>@endcan
-				@can('power-stop', $server)<button class="btn btn-danger disabled" data-attr="power" data-action="stop">Stop</button>@endcan
-				@can('power-kill', $server)<button class="btn btn-danger disabled" data-attr="power" data-action="kill">Kill</button>@endcan
+				@can('power-stop', $server)<button class="btn btn-danger disabled" data-attr="power" data-action="stop">Graceful Shutdown</button>@endcan
+				@can('power-kill', $server)<button class="btn btn-danger disabled" data-attr="power" data-action="kill">Assasinate</button>@endcan
 			</div>
 		</div>
 	</div>
@@ -87,7 +87,7 @@
 		<div class="box-body media align-items-center px-xl-3">
 		<div class="box box-primary align-items-center">
 			<div class="box-header with-border">
-				<h3 class="box-title">Node Information</h3>
+				<h3 class="box-title">Node</h3>
 					<div class="text-info"><i class="fas fa-memory text-success ml-1"></i></div>
 				</div>
 				<div class="box-body">
