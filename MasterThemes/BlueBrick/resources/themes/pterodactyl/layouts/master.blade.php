@@ -40,8 +40,6 @@
         @show
     </head>
     <body class="hold-transition skin-blue fixed sidebar-mini">
-        <div class="wrapper">
-     
             <aside class="main-sidebar">
                 <section class="sidebar">
                     @if (isset($server->name) && isset($node->name))
