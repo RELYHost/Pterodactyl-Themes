@@ -37,7 +37,7 @@
         <div class="container">
             <div id="login-position-elements">
                 <div class="login-logo">
-                <img src="phttps://media.discordapp.net/attachments/569945795386802188/570004214395305997/image_3.png" alt="RelyHost Logo">
+                <img src="https://media.discordapp.net/attachments/569945795386802188/570004214395305997/image_3.png" alt="RelyHost Logo">
                 </div>
                 @yield('content')
                 <p class="small login-copyright text-center">
