@@ -39,7 +39,7 @@
             <![endif]-->
         @show
     </head>
-    <body class="hold-transition skin-blue fixed sidebar-mini">
+    /*<body class="hold-transition skin-blue fixed sidebar-mini">
             <aside class="main-sidebar">
                 <section class="sidebar">
                     @if (isset($server->name) && isset($node->name))
@@ -269,5 +269,5 @@
                 </script>
             @endif
         @show
-    </body>
+    </body>/*
 </html>
