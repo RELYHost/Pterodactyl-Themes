@@ -41,10 +41,6 @@
     </head>
     <body class="hold-transition skin-blue fixed sidebar-mini">
     <header class="main-header">
-                <a href="{{ route('index') }}" class="logo">
-                    <span class="logo-lg">{{ config('app.name', 'Pterodactyl') }}</span>
-                    <h4>R</h4>
-                </a>
                 <nav class="navbar navbar-static-top">
                     <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
                         <span class="sr-only">Toggle navigation</span>
