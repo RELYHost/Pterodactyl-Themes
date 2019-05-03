@@ -40,6 +40,45 @@
         @show
     </head>
     <body class="hold-transition skin-blue fixed sidebar-mini">
+    <header class="main-header">
+                <a href="{{ route('index') }}" class="logo">
+                    <span class="logo-lg">{{ config('app.name', 'Pterodactyl') }}</span>
+                    <span class="logo-mini"><img src="/favicons/android-chrome-192x192.png"></span>
+                </a>
+                <nav class="navbar navbar-static-top">
+                    <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <div class="navbar-custom-menu">
+                        <ul class="nav navbar-nav">
+                            <li class="user-menu">
+                                <a href="{{ route('account') }}">
+                                    <img src="https://www.gravatar.com/avatar/{{ md5(strtolower(Auth::user()->email)) }}?s=160" class="user-image" alt="User Image">
+                                    <span class="hidden-xs">{{ Auth::user()->name_first }} {{ Auth::user()->name_last }}</span>
+                                </a>
+                            </li>
+                            @if(isset($sidebarServerList))
+                                <li>
+                                    <a href="#" data-toggle="control-sidebar">
+                                        <i class="fa fa-server"></i>
+                                    </a>
+                                </li>
+                            @endif
+                            @if(Auth::user()->root_admin)
+                                <li>
+                                    <li><a href="{{ route('admin.index') }}" data-toggle="tooltip" data-placement="bottom" title="@lang('strings.admin_cp')"><i class="fa fa-gears"></i></a></li>
+                                </li>
+                            @endif
+                            <li>
+                                <li><a href="{{ route('auth.logout') }}" id="logoutButton" data-toggle="tooltip" data-placement="bottom" title="@lang('strings.logout')"><i class="fa fa-sign-out"></i></a></li>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
             <aside class="main-sidebar">
                 <section class="sidebar">
                     @if (isset($server->name) && isset($node->name))
