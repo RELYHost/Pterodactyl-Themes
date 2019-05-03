@@ -138,7 +138,7 @@
                                     @endif
                                 ">
                                     
-                                
+                                    <ul class="treeview-menu">
                                         @can('view-name', $server)
                                             <li class="{{ Route::currentRouteName() !== 'server.settings.name' ?: 'active' }}"><a href="{{ route('server.settings.name', $server->uuidShort) }}"><i class="fa fa-angle-right"></i> @lang('navigation.server.server_name')</a></li>
                                         @endcan
