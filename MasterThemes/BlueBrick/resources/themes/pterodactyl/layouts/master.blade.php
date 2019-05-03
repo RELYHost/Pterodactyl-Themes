@@ -63,6 +63,7 @@
                                     </a>
                                 </li>
                             @endif
+                            <li><a href="https://rely.host" data-toggle="tooltip" data-placement="bottom" title="Your Servers)"><i class="far fa-hdd"></i></a></li>
                             @if(Auth::user()->root_admin)
                                 <li>
                                     <li><a href="{{ route('admin.index') }}" data-toggle="tooltip" data-placement="bottom" title="@lang('strings.admin_cp')"><i class="fa fa-gears"></i></a></li>
