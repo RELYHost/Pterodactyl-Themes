@@ -64,7 +64,7 @@
                                 </li>
                             @endif
                             <li><a href="https://rely.host" data-toggle="tooltip" data-placement="bottom" title="Homepage"><i class="fa fa-home"></i></a></li>
-                            <li><a href=https://panel.rely.host" data-toggle="tooltip" data-placement="bottom" title="Your Servers"><i class="fa fa-gears"></i></a></li>
+                            <li><a href=https://panel.rely.host/ data-toggle="tooltip" data-placement="bottom" title="Your Servers"><i class="fa fa-gears"></i></a></li>
                             
                             @if(Auth::user()->root_admin)
                                 <li>
