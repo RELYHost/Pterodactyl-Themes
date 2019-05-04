@@ -57,7 +57,7 @@
         <script type="text/javascript">
             /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
             $(function () {
-                particlesJS.load('particles-js', '{!! Theme::url('vendor/particlesjs/particles.json?t={cache-version}') !!}', function() {});
+                particlesJS.load('particles-js', '{!! Theme::url('vendor/particlesjs/particles.json} function() {});
             })
         </script>
     </body>
