@@ -21,9 +21,10 @@ if [ ! -f "artisan" ]; then
     zip -r PterodactylBackup-$(date +"%Y-%m-%d").zip public resources 2> /dev/null
 
     echo "Downloading the Theme you picked"
-    mkdir -p tempdown && cd tempdown && git clone https://github.com/RELYHost/Pterodactyl-Themes.git .
-    cp -r MasterThemes/BlueBrick/public ..
-    cp -r MasterThemes/BlueBrick/resources ..
+    mkdir -p tempdown && cd tempdown && git clone https://github.com/RELYHost/RedXen-Panel.git .
+    cp -r RedXen-Panel-master/public ..
+    cp -r RedXen-Panel-master/resources ..
+    cp -r RedXen-panel-master/config ..
 
     echo "Files have been copied over!"
     sleep 2
